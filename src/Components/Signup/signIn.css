@@ -1,0 +1,86 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  width: 40%;
+  height: 30rem;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.card h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(46, 118, 234);
+  text-shadow: 2px 2px 3px rgb(21, 21, 21);
+  letter-spacing: 5px;
+  word-spacing: 5px;
+}
+.signIn-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signIn-btn button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background-color: rgb(46, 118, 234);
+  outline: none;
+}
+.signIn-btn button:hover {
+  transform: translateY(2px);
+}
+.signIn-btn button h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0.2rem;
+  color: #fffffff0;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    min-width: 20rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    min-width: 14rem;
+    border:none;
+    box-shadow: 0 0 0 ;
+  }
+  .card h1{
+    text-align: center;
+    word-wrap: wrap;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+  }
+  .card button{
+    height: 3.5rem;
+    width:90%;
+    overflow: hidden;
+  }
+  .card button h3{
+    word-wrap: wrap;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+  }
+}

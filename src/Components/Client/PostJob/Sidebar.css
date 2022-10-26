@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+.row {
+    overflow-y: scroll;
+    
+}
+.column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 36px;
+    text-align: center;
+    background-color: #FFFFFF;
+}

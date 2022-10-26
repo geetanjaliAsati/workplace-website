@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Mono', monospace;
+}
+.wrapper-container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://w0.peakpx.com/wallpaper/323/21/HD-wallpaper-plain-white-abstract-thumbnail.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.side-image-container{
+    position: absolute;
+    top: -30px;
+    right: 0;
+    height: 60%;
+}
+.side-image-container img{
+  width: 100%;
+  height: 100%;
+}  
+.signin-container{
+    border: 0.5px solid rgb(235, 230, 230);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    height: 70%;
+    width:30%;
+    padding: 50px 20px;
+    background-color: rgba(246, 246, 247, 0.2);
+    box-shadow: 0px 0px 20px rgb(196, 196, 196);
+    border-radius: 15px;
+}
+.signin-container h2{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 67px;
+    color: black;
+}
+.signin-container h1{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    color: black;
+}
+.signin-container button{
+    width: 319px;
+    height: 63px;
+    background-color: rgb(240, 243, 248);
+    border-radius: 8px;
+    color: rgb(14, 13, 13);
+    border: none;
+    outline: none;
+    margin-top: 90px;
+    font-size: 18px;
+    box-shadow: 2px 2px 10px rgb(131, 129, 129);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signin-container button:hover{
+   background-color: rgb(30, 108, 233);
+   transition: 0.5s;
+   color: #ffff;
+}
+.signin-container button svg{
+    width: 40px;
+    margin: 5px;
+}
+.signin-container img{
+    width: 150px;
+    height: 150px;
+}
+
+@media only screen and (min-width: 1800px) {
+    .signin-container h2{
+        font-size: 62px;
+    }
+    .signin-container h1{
+        font-size: 58px;
+    }
+    .signin-container{
+        width: 36%;
+        height: 80%;
+    }
+    .signin-container img{
+        width: 270px;
+        height: 270px;
+    }
+    .signin-container button{
+        width: 419px;
+        height: 80px;
+        font-size: 29px;
+        padding: 10px;
+       
+    }
+    .signin-container button svg{
+        width: 60px;
+    }
+ }
+ @media only screen and (max-width: 1250px) {
+   .signin-container h2{
+        font-size: 40px;
+    }
+    .signin-container h1{
+        font-size: 34px;
+    }
+    .signin-container{
+        width:35%;
+    }
+    .signin-container button{
+        width: 300px;
+    }
+    
+ }
+ @media only screen and (max-width: 900px) {
+    .signin-container h2{
+         font-size: 35px;
+     }
+     .signin-container h1{
+         font-size: 32px;
+     }
+     .signin-container{
+         width:40%;
+     }
+     .signin-container button{
+         width: 270px;
+     }
+     
+  }
+  @media only screen and (max-width: 550px) {
+    .signin-container h2{
+         font-size: 32px;
+     }
+     .signin-container h1{
+         font-size: 30px;
+     }
+     .signin-container{
+        margin-top: 50%;
+         width:70%;
+     }
+     .signin-container button{
+        margin-top: 50px;
+         width: 250px;
+     }
+     .side-image-container{
+        height: 40%;
+    }
+    .signin-container button svg{
+        width: 40px;
+        margin: 2px;
+    }
+     
+  }
